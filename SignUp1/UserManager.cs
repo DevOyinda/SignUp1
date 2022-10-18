@@ -8,15 +8,15 @@ namespace SignUp1
 {
     public class UserManager
     {
-        public static string Email;
-        public static string FullName;
-        public static string Password;
-        public static string FirstName;
-        public static string LastName;
-        public static int selection;
-        public static string FilePath = @"C:\Users\oyins\Desktop\Oyinda\FilesFolder\";
+        public string Email;
+        public string FullName;
+        public string Password;
+        public string FirstName;
+        public string LastName;
+        public int selection;
+        public string FilePath = @"C:\Users\oyins\Desktop\Oyinda\FilesFolder\";
 
-        public static void HomeScreen()
+        public void HomeScreen()
         {
             Console.WriteLine("Welcome to Sukoko App\nPlease Select a valid Option:\nPress 1 for Registration\nPress 2 for Login\nPress 3 to close the application.");
             selection = Convert.ToInt32(Console.ReadLine());
@@ -40,7 +40,7 @@ namespace SignUp1
             }
         }
 
-        public static void UserRegister()
+        public void UserRegister()
         {
             Console.WriteLine("Please fill in your details.");
 
@@ -69,7 +69,7 @@ namespace SignUp1
             }
         }
 
-        public static void UserLogin()
+        public void UserLogin()
         {
             Console.WriteLine("Welcome to the Login Screen.\nPlease provide your login details.");
 

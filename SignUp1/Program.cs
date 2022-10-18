@@ -6,7 +6,8 @@ namespace SignUp1
     {
         static void Main()
         {
-           UserManager.HomeScreen();
+            UserManager usm = new UserManager();
+            usm.HomeScreen();
         }
     }
 }
